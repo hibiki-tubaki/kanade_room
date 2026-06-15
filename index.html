@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>奏くんのお部屋</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+<div id="game-container">
+
+<header id="game-header">
+<img src="assets/logo.png" alt="奏くんのお部屋 ロゴ" id="logo">
+<h2>愛着ポイント: <span id="points">0</span> pt</h2>
+</header>
+
+<main>
+<section id="character-area">
+<img
+src="assets/01_kanade_chibi_default_normal.png"
+alt="通常表情の奏くん"
+id="kanade-image"
+>
+</section>
+
+<section id="dialogue-box">
+<p id="kanade-speech">……お嬢、おかえり……。ずっと、待ってたんだよ……？</p>
+</section>
+</main>
+
+<section id="status-area">
+<div class="status-bar">おなか: <span id="status-hunger">100</span>%</div>
+<div class="status-bar">ご機嫌: <span id="status-mood">50</span>%</div>
+<div class="status-bar">依存度: <span id="status-dependence">30</span>%</div>
+</section>
+
+<nav id="action-buttons">
+<button type="button" onclick="petKanade()">なでる</button>
+<button type="button" onclick="talkToKanade()">話しかける</button>
+<button type="button" onclick="giveGift()">差し入れ</button>
+</nav>
+
+</div>
+</body>
+</html>​
